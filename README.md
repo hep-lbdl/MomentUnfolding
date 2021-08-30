@@ -1,3 +1,3 @@
 # Moment Unfolding
 
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+Consider S_T, S_M, D_T, D_M where T stands for truth, R stands for measured, S stands for simulation and D stands for data.  S_T, D_T\in\mathbb{R}^N and S_M, D_M\in\mathbb{R}^M.  We observe D_M and want to use (S_T,S_M) to infer D_T.  This is the usual unfolding problem.  Suppose we only want to know moments of D_T?  For instance, let's say we want to know `E[D_T[0] | D_T[1]]` where `D_T[0]` and `D_T[1]` are the first and second elements of D_T.  One could solve this by doing the full unfolding of D_T and then computing momemts, but this is overkill - the question is if we can design a dedicated approach for moment unfolding.
